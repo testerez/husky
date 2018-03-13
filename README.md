@@ -78,9 +78,9 @@ If [`nvm`](https://github.com/creationix/nvm) is installed, husky will try to us
 
 __Tip__ to use the system-installed version of node, `nvm` provides a [`system`](https://github.com/creationix/nvm#system-version-of-node) alias
 
-### Accessing Git params
+### Accessing Git params and stdin
 
-Git params can be found in `GIT_PARAMS` environment variable.
+Git params and stdin can be found in `GIT_PARAMS` and `GIT_STDIN` environment variables.
 
 ### Setting a different log level
 

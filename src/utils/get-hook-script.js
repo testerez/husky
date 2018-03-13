@@ -91,7 +91,9 @@ module.exports = function getHookScript(hookName, relativePath, npmScriptName) {
         exit 0
       }
 
-      # Export Git hook params
+      # Export Git hook stdin and params
+      read stdin
+      export GIT_STDIN=$stdin
       export GIT_PARAMS="$*"
 
       # Run npm script
